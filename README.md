@@ -1,8 +1,8 @@
-# dsh-theme-paper-warm · 暖纸主题
+# dsh-theme-paper-warm · 护眼暖纸主题
 
-Warm paper theme for the DeepSeek Harness (DSH) Web GUI: canvas `#F2F0E5`, ink `#100F0F`, sidebar painted the same warm paper, font stack led by `Segoe UI`. It registers as a third-party theme (`paper-warm`) and adds its own toggle row to **Settings → General**; the choice persists across reloads and restarts.
+Eye-care warm paper theme for the DeepSeek Harness (DSH) Web GUI: canvas `#F2F0E5`, ink `#100F0F`, sidebar painted the same warm paper, font stack led by `Segoe UI`. It registers as a third-party theme (`paper-warm`) and adds its own toggle row to **Settings → General**; the choice persists across reloads and restarts. Search keywords: eye-care, eye-friendly, warm paper, 护眼, 暖纸.
 
-给 DeepSeek Harness Web GUI 的暖纸主题：画布 `#F2F0E5`，正文 `#100F0F`，侧栏与画布同色，字体栈以 `Segoe UI` 打头。以「第三方主题」形式注册（id `paper-warm`），并在「设置 → 通用」里自带一行开关；选择跨刷新、跨重启保留。
+给 DeepSeek Harness Web GUI 的护眼暖纸主题：画布 `#F2F0E5`，正文 `#100F0F`，侧栏与画布同色，字体栈以 `Segoe UI` 打头。以「第三方主题」形式注册（id `paper-warm`），并在「设置 → 通用」里自带一行开关；选择跨刷新、跨重启保留。搜索关键词：护眼、暖纸、暖色、纸张配色。
 
 ![icon](icon.svg)
 
@@ -64,6 +64,11 @@ node test/boot-race.test.mjs
 ```
 
 在不启动 GUI 的情况下复现并按真实顺序驱动客户端半边（插件 `apply` 先恢复已存选择 → 宿主设置稍后下发），断言最终仍是暖纸，同时覆盖原生「外观」选择、本行开关、以及取不到设置服务时的降级行为。
+
+## 更新日志 / Changelog
+
+- **0.1.1**（2026-11-16）：备注与描述改为「护眼暖纸主题 / eye-care warm paper」便于插件市场搜索索引；声明 `engines.dsh`（`>=0.2.1-rc.2 <0.2.2-0 || >=0.2.2-rc.1 <0.3.0-0`，适配 0.2.2-rc 系列新版本 Harness）；按升级指南 `v0.2.2-rc.1/window-drag-regions` 为侧栏重开按钮声明 `data-window-drag-exclude`，保证 macOS Desktop 上浮层按钮可交互。
+- **0.1.0**（2026-11-13）：首次发布（npm + GitHub + awesome-dsh-plugin 收录）。
 
 ## License
 

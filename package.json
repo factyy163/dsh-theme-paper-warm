@@ -1,7 +1,7 @@
 {
   "name": "dsh-theme-paper-warm",
-  "version": "0.1.0",
-  "description": "Warm paper theme for the DeepSeek Harness Web GUI (canvas #F2F0E5, ink #100F0F), registered as a selectable third-party theme with its own Appearance toggle row.",
+  "version": "0.1.1",
+  "description": "Eye-care warm paper theme (护眼暖纸主题) for the DeepSeek Harness Web GUI: canvas #F2F0E5, ink #100F0F, registered as a selectable third-party theme with a Settings → General toggle row.",
   "type": "module",
   "main": "lib/index.mjs",
   "exports": {
@@ -33,9 +33,16 @@
     "skin",
     "warm",
     "paper",
+    "eye-care",
+    "eye-friendly",
+    "护眼",
+    "暖纸",
     "cordis"
   ],
   "license": "MIT",
+  "engines": {
+    "dsh": ">=0.2.1-rc.2 <0.2.2-0 || >=0.2.2-rc.1 <0.3.0-0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/factyy163/dsh-theme-paper-warm.git"
